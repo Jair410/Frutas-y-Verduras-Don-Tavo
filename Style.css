@@ -317,7 +317,6 @@ tbody tr:nth-child(even) {
 }
 
 .Zindex{
-    display: flex;
     flex-direction: column; /* Coloca la imagen estática y el carrusel en columna */
     justify-content: center;
     align-items: center;
