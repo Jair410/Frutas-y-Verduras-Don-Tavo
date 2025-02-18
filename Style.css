@@ -321,7 +321,7 @@ tbody tr:nth-child(even) {
     flex-direction: column; /* Coloca la imagen estática y el carrusel en columna */
     justify-content: center;
     align-items: center;
-    z-index: -200;
+    z-index: -2000;
 }
 
 @media screen and (max-width: 768px) {
