@@ -1,0 +1,50 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas grandes */
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    max-width: 100%; /* Asegura que las tarjetas se ajusten dentro de cada columna */
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: -200;
+
+.card .icon {
+    font-size: 3rem;
+    color: lightseagreen;
+}
+
+.card-text {
+    color: gray;
+}
+
+.card:hover {
+    background-color: lightseagreen;
+    color: #fff;
+}
+
+.card:hover .icon, .card:hover .card-text {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+    }
+}
+}
+
+.ZINDEX{
+    z-index: -300;
+}

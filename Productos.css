@@ -1,0 +1,53 @@
+/* Personalización de la tabla */
+.container {
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.table-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin-bottom: 0;
+    background-color: #f9f9f9;
+}
+
+thead th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#prevPage, #nextPage {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prevPage:hover, #nextPage:hover {
+    background-color:#317133;
+}
+
+#pagination {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #333;
+}

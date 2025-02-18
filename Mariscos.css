@@ -1,0 +1,59 @@
+.layout_marisco {
+    display: flex;
+    justify-content: space-between;  /* Asegura que haya espacio entre las imágenes */
+    gap: 10px;  /* Ajusta el espacio entre las imágenes */
+    width: 100%;
+    flex-wrap: wrap;  /* Permite que las imágenes se ajusten si es necesario */
+    padding: 0 5vw;  /* Añade un poco de margen a los lados en pantallas grandes */
+}
+
+.grow1 {
+    flex-grow: 1;
+    display: flex;  /* Asegura que las imágenes se ajusten bien */
+    justify-content: center;  /* Centra las imágenes dentro del contenedor */
+    align-items: center;  /* Centra las imágenes verticalmente */
+    max-width: 50%;  /* Evita que se estiren demasiado */
+    margin: 0;  /* Elimina cualquier margen extra */
+}
+
+.grow1 img {
+    width: 100%;  /* Las imágenes ahora ocuparán todo el ancho disponible */
+    height: auto;
+    max-width: 100%;  /* Asegura que las imágenes no se desborden */
+}
+
+/* Media Query para pantallas grandes */
+@media screen and (min-width: 769px) {
+    .layout_marisco {
+        padding: 0 5vw;  /* Ajusta el margen en pantallas más grandes */
+    }
+
+    .grow1 {
+        width: 45%;  /* Ajusta el tamaño de las imágenes en pantallas grandes */
+    }
+
+    .grow1 img {
+        width: 100%;  /* Las imágenes ocupan todo el contenedor */
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .layout_marisco {
+        flex-direction: column;  /* Las imágenes se apilan en pantallas pequeñas */
+        gap: 10px;  /* Ajusta el espacio entre las imágenes */
+        padding: 0;  /* Elimina el padding a los lados */
+        align-items: center;  /* Centra las imágenes en el contenedor */
+    }
+
+    .grow1 {
+        width: 90vw;  /* Las imágenes ocupan el 90% del ancho de la pantalla */
+        margin: 0;  /* Elimina márgenes extra */
+        justify-content: center;  /* Asegura que las imágenes estén centradas */
+    }
+
+    .grow1 img {
+        width: 100%;  /* Las imágenes ocupan el 100% del contenedor */
+        height: auto;
+    }
+}
